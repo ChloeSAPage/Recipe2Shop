@@ -1,0 +1,21 @@
+background-colour {
+    color: khaki;
+}
+
+p,
+font {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+img {
+    height: 450px;
+
+}
+
+button {
+    color: black;
+}
+
+a {
+    text-decoration: none
+}
