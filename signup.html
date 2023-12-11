@@ -14,25 +14,35 @@
 </head>
 
 <body>
-    <header>
+
+    <header class="m-3">
         <h1>Recipe2Shop</h1>
     </header>
-    <form method="post">
-        <div>
-            <label for="username"> Username </label>
-            <input type="text" id="username" name="username" required>
-        </div>
-        <div>
-            <label for="email"> Email </label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        <div>
-            <label for="password"> Password </label>
-            <input type="password" id="password" name="password" required>
-        </div>
-        <button type="button">Sign Up</button>
-    </form>
-    <p>Already have an account? <a href="login.html">Log In</a></p>
+
+    <div class="m-5">
+        <form method="post">
+            <div class="mb-3">
+                <label for="username" class="form-label"> Username </label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label"> Email </label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label"> Password </label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+
+            <div class="mx-3">
+                <button type="button" class="btn btn-primary">Sign Up</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="text-center m-4">
+        <p>Already have an account? <a href="login.html">Log In</a></p>
+    </div>
 </body>
 
 </html>
