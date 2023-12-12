@@ -1,21 +1,24 @@
-background-colour {
-    color: khaki;
-}
-
+h1,
 p,
-font {
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-img {
-    height: 450px;
-
-}
-
-button {
-    color: black;
+a,
+{
+font-family: 'Roboto Condensed', sans-serif;
 }
 
 a {
-    text-decoration: none
+    text-decoration: none;
+    color: green;
+}
+
+.nav-font {
+    font-size: larger !important;
+}
+
+.custom-container {
+    display: flex;
+    justify-content: center;
+}
+
+.custom-card {
+    width: 400px;
 }
