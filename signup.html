@@ -13,31 +13,33 @@
     <title>Sign Up</title>
 </head>
 
-<body>
+<body class="bg-dark text-white">
 
-    <header class="m-3">
+    <header class="m-5">
         <h1>Recipe2Shop</h1>
     </header>
 
-    <div class="m-5">
-        <form method="post">
-            <div class="mb-3">
-                <label for="username" class="form-label"> Username </label>
-                <input type="text" class="form-control" id="username" name="username" required>
+    <div class="custom-container">
+        <div class="card text-bg-secondary custom-card">
+            <div class="container d-flex justify-content-center my-3 card-body">
+                <form method="post">
+                    <div class="form-group mb-4">
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Username"
+                            required>
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="mb-4">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password"
+                            required>
+                    </div>
+                    <div class="text-center">
+                        <button type="button" class="btn btn-success">Sign Up</button>
+                    </div>
+                </form>
             </div>
-            <div class="mb-3">
-                <label for="email" class="form-label"> Email </label>
-                <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-            <div class="mb-3">
-                <label for="password" class="form-label"> Password </label>
-                <input type="password" class="form-control" id="password" name="password" required>
-            </div>
-
-            <div class="mx-3">
-                <button type="button" class="btn btn-primary">Sign Up</button>
-            </div>
-        </form>
+        </div>
     </div>
 
     <div class="text-center m-4">
