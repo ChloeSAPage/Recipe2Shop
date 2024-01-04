@@ -1,6 +1,5 @@
 # Recipe2Shop
 A meal planning web app
-Visit here: https://chloesapage.github.io/Recipe2Shop/
 
 ## Aims
 
