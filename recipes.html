@@ -15,8 +15,8 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #3f474f">
-        <a class="navbar-brand" style="color:white" href="#">Recipe2Shop</a>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3f474f">
+        <a class="navbar-brand" href="index.html">Recipe2Shop</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,17 +24,17 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
                 <li class="nav-item active">
-                    <a class="nav-link" style="color:white" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="recipes.html">Recipes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="color:white" href="recipes.html">Recipes</a>
+                    <a class="nav-link" href="meal-plan.html">Meal Planning</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" style="color:white" href="meal-plan.html">Meal Planning</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" style="color:white" href="shoppinglist.html">Shopping List</a>
+                    <a class="nav-link" href="shoppinglist.html">Shopping List</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -45,36 +45,119 @@
         </div>
     </nav>
 
-    <nav class="vertical">
-        <a href="">Add New</a>
-        <a href="">Search</a>
-        <a href="">Category 1</a>
-        <a href="">Category 2</a>
-        <a href="">Category 3</a>
-    </nav>
-
-    <div>
-        <img src="" alt="food">
-        <h1>Ingredients</h1>
-        <ul>
-            <li>Ingredient 1</li>
-            <li>Ingredient 2</li>
-            <li>Ingredient 3</li>
-            <li>Ingredient 4</li>
-        </ul>
+    <div class="mt-2 container clearfix">
+        <div class="row">
+            <div class="col">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="images\Garlic Black Pepper Chicken.jpeg" class="img-fluid rounded float-start"
+                                alt="chicken and rice garnished with sesame seeds and green onions.">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="text-shadow: 1px 1px  black">Garlic Black Pepper Chicken</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" style="border-radius: 5%;" src="images\pork belly.jpeg"
+                                alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="text-shadow: 1px 1px  black">Red Braised Pork</h5>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="images\Beef Broccoli Noodles.jpeg" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5 style="text-shadow: 1px 1px  black">Beef Broccoli Noodles</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-8">
+                <h1 class="text-center">Ingredients</h1>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <ul style="list-style-type:circle">
+                                <li>4 Chicken Thighs</li>
+                                <li>Salt and Pepper</li>
+                                <li>Rice</li>
+                                <li>Butter</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul style="list-style-type:circle">
+                                <li>Oyster Sauce</li>
+                                <li>Soy Sauce</li>
+                                <li>Black Pepper</li>
+                                <li>Ingredient 4</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul style="list-style-type:circle">
+                                <li>Ingredient 1</li>
+                                <li>Ingredient 2</li>
+                                <li>Ingredient 3</li>
+                                <li>Ingredient 4</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul style="list-style-type:circle">
+                                <li>Ingredient 1</li>
+                                <li>Ingredient 2</li>
+                                <li>Ingredient 3</li>
+                                <li>Ingredient 4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
 
-    <div>
+    <div class="text-center mt-4">
         <h2>Instructions</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eum optio deleniti iste tenetur,
-            laboriosam voluptatem quos sed iusto possimus laborum, fugiat voluptatum quia ipsum dolores necessitatibus
-            minus libero porro?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, molestiae. Sequi, maxime ipsam
+            perferendis reprehenderit illo necessitatibus distinctio hic consequatur molestiae doloribus aliquam
+            impedit eius dolor et, repudiandae maiores iste repellendus saepe. Praesentium nobis corrupti culpa eos,
+            rem nemo. Rerum ipsa cum perspiciatis molestiae sit. Labore iste et vero laudantium accusantium deserunt
+            quasi ullam id natus illo tempore alias qui iure quam explicabo unde neque exercitationem officia
+            nostrum ea dolores architecto, provident rem. Officiis, eum error ipsum quaerat consequuntur laudantium
+            animi molestiae maxime optio accusamus est incidunt nobis enim culpa cumque quia, dicta autem quasi
+            consectetur ut obcaecati omnis. Veritatis nostrum praesentium labore quos aliquam, illum at, deleniti
+            facere dolores ratione sapiente. Aut ipsam voluptate vel nostrum soluta placeat architecto vitae, nihil
+            eum reprehenderit culpa saepe iste ipsum et! Inventore blanditiis illum doloribus odit. Provident dolor
+            consectetur rem esse sit itaque alias quos, minus, incidunt repudiandae est sunt enim earum.</p>
     </div>
 
     <footer>
         <a href="">Not Happy?</a>
         <a href="">Export</a>
     </footer>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
