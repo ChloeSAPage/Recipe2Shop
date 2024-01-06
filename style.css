@@ -43,3 +43,7 @@ a {
 .recipe2shop{
     text-shadow: 0px 2px #ffffff80;
 }
+
+ul{
+    list-style-type: none;
+}
