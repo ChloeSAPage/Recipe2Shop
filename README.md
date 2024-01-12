@@ -17,6 +17,7 @@ Meal planning and shopping list creation
 - Includes breakfast, lunch, dinner and snacks
 - Has option to convert units
 - Ensure there is variation each week
+- Create a meal plan around a recipe/recipes I want that week
 
 ## Shopping List
 
