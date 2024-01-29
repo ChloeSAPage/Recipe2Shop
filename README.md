@@ -18,7 +18,9 @@ Meal planning and shopping list creation
 - Includes breakfast, lunch, dinner, desert and snacks.
 - Has option to convert units.
 - Ensure there is variation each week.
+- Option to choose timeframe (7 days, 14 etc.).
 - Create a meal plan around a recipe/recipes I want that week.
+- Recipes that require more fresh produce get put earlier in the week. 
 
 ## Shopping List
 
