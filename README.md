@@ -15,7 +15,8 @@ https://chloesapage.github.io/Recipe2Shop/
 ## Roadmap 
 
 ### Recipes
-- Create a way to store recipes
+- Have a way for users to input their recipes
+- Store recipes in a database
 - Categorise recipes
 - Allow users to input ingredients they already have and receive recipes that include those ingredients
 
