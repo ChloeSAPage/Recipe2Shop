@@ -3,7 +3,7 @@
   <img src="https://github.com/user-attachments/assets/94880acf-522b-4255-af52-e63b30d4f255" />
 </p>
 
-A meal planning web app. Created as a final project for CFG: Intro to Web Dev. Currently, only the front end has been created with plans to create a working backend.
+A meal planning web app. Created as a final project for CFG: Intro to Web Dev. Currently, only the front end has been created with plans to migrate to React and Django.
 
 # Aims
 
