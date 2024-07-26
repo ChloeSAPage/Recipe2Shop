@@ -1,19 +1,35 @@
-# Recipe2Shop
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/94880acf-522b-4255-af52-e63b30d4f255" />
+</p>
+
 A meal planning web app. Created as a final project for CFG: Intro to Web Dev. Currently, only the front end has been created with plans to create a working backend.
 
-## Aims
+# Aims
 
 To create a working full-stack web application which allows users to store recipes, which can then be used for meal plan and shopping list creation. 
 Meal planning and shopping list creation. 
 
-## Demo
+# Demo
 
 https://chloesapage.github.io/Recipe2Shop/
 
 ![chloesapage github io_Recipe2Shop_](https://github.com/ChloeSAPage/Recipe2Shop/assets/135153095/42ab8db4-aa80-4bd8-ae52-f48891086c90)
 
-## Roadmap 
+# Roadmap 
 
+## Tech
+
+### Frontend
+- Migrate to React and Typescript
+- Possibly use Next.js
+
+
+### Backend
+- Python using Django
+
+
+## Features 
 ### Recipes
 - Have a way for users to input their recipes
 - Store recipes in a database
