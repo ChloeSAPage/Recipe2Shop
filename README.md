@@ -28,6 +28,8 @@ https://chloesapage.github.io/Recipe2Shop/
 ### Backend
 - Python using Django
 
+# Mobile
+- React Native
 
 ## Features 
 ### Recipes
