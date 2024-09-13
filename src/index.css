@@ -1,0 +1,188 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+}
+
+#root {
+    height: 100%;
+}
+
+:root {
+    /* Colours */
+    --background: #212529;
+    --siteNavBackground: #3f474f;
+    --siteHeaderBackground: #3f474f;
+    --siteFooterBackground: #3f474f;
+    --textHighlight: #add8e6;
+    --text: #ffffd4;
+    --button: #28a745;
+    --buttonShadow: #146c43;
+
+    /* Typography */
+    --h1-desktop: 56px/64px "Roboto Condensed", "Roboto", sans-serif;
+    --h1-tablet: 40px/48px "Roboto Condensed", "Roboto", sans-serif;
+    --h1-mobile: 32px/40px "Roboto Condensed", "Roboto", sans-serif;
+
+    --h2-desktop: 32px/40px "Roboto Condensed", "Roboto", sans-serif;
+    --h2-tablet: 32px/40px "Roboto Condensed", "Roboto", sans-serif;
+    --h2-mobile: 32px/40px "Roboto Condensed", "Roboto", sans-serif;
+
+    --h3-desktop: 24px/36px "Roboto Condensed", "Roboto", sans-serif;
+    --h3-tablet: 24px/36px "Roboto Condensed", "Roboto", sans-serif;
+    --h3-mobile: 20px/24px "Roboto Condensed", "Roboto", sans-serif;
+
+    --h4-desktop: 20px/28px "Roboto Condensed", "Roboto", sans-serif;
+    --h4-tablet: 20px/28px "Roboto Condensed", "Roboto", sans-serif;
+    --h4-mobile: 16px/24px "Roboto Condensed", "Roboto", sans-serif;
+
+    --h5-desktop: 18px/24px "Roboto Condensed", "Roboto", sans-serif;
+    --h5-tablet: 18px/24px "Roboto Condensed", "Roboto", sans-serif;
+    --h5-mobile: 14px/20px "Roboto Condensed", "Roboto", sans-serif;
+
+    --h6-desktop: 16px/20px "Roboto Condensed", "Roboto", sans-serif;
+    --h6-tablet: 16px/20px "Roboto Condensed", "Roboto", sans-serif;
+    --h6-mobile: 12px/18px "Roboto Condensed", "Roboto", sans-serif;
+
+    --p-desktop: 16px/24px "Roboto Condensed", "Roboto", sans-serif;
+    --p-tablet: 16px/24px "Roboto Condensed", "Roboto", sans-serif;
+    --p-mobile: 14px/20px "Roboto Condensed", "Roboto", sans-serif;
+
+    --strong-desktop: bold 16px/24px "Roboto Condensed", "Roboto", sans-serif;
+    --strong-tablet: bold 16px/24px "Roboto Condensed", "Roboto", sans-serif;
+    --strong-mobile: bold 14px/20px "Roboto Condensed", "Roboto", sans-serif;
+}
+
+/* Mobile Typography */
+h1 {
+    font: var(--h1-mobile);
+}
+
+h2 {
+    font: var(--h2-mobile);
+}
+
+h3 {
+    font: var(--h3-mobile);
+}
+
+h4 {
+    font: var(--h4-mobile);
+}
+
+h5 {
+    font: var(--h5-mobile);
+}
+
+h6 {
+    font: var(--h6-mobile);
+}
+
+p {
+    font: var(--p-mobile);
+}
+
+strong {
+    font: var(--strong-mobile);
+}
+
+/* Tablet Typography */
+@media only screen and (min-width: 768px) {
+    h1 {
+        font: var(--h1-tablet);
+    }
+
+    h2 {
+        font: var(--h2-tablet);
+    }
+
+    h3 {
+        font: var(--h3-tablet);
+    }
+
+    h4 {
+        font: var(--h4-tablet);
+    }
+
+    h5 {
+        font: var(--h5-tablet);
+    }
+
+    h6 {
+        font: var(--h6-tablet);
+    }
+
+    p {
+        font: var(--p-tablet);
+    }
+
+    strong {
+        font: var(--strong-tablet);
+    }
+}
+
+/* Desktop Typography */
+@media only screen and (min-width: 1024px) {
+    h1 {
+        font: var(--h1-desktop);
+    }
+
+    h2 {
+        font: var(--h2-desktop);
+    }
+
+    h3 {
+        font: var(--h3-desktop);
+    }
+
+    h4 {
+        font: var(--h4-desktop);
+    }
+
+    h5 {
+        font: var(--h5-desktop);
+    }
+
+    h6 {
+        font: var(--h6-desktop);
+    }
+
+    p {
+        font: var(--p-desktop);
+    }
+
+    strong {
+        font: var(--strong-desktop);
+    }
+}
+
+/* Dark Mode and Light Mode */
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background: #ffffff;
+    }
+
+    body {
+        color: black;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+}

@@ -1,0 +1,8 @@
+.wrapper {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: var(--siteHeaderBackground);
+}

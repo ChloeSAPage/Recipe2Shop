@@ -1,0 +1,24 @@
+.wrapper {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: var(--siteNavBackground);
+}
+
+.links {
+    display: flex;
+}
+
+.activeLink,
+.inactiveLink {
+    padding: 0 2rem;
+}
+
+.activeLink {
+    color: white;
+}
+
+.inactiveLink {
+    color: #b8b3b3;
+}

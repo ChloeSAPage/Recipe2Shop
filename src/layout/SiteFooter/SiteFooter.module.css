@@ -1,0 +1,10 @@
+.wrapper {
+    padding: 1rem;
+    border-top: 2px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+    background: var(--siteFooterBackground);
+}
