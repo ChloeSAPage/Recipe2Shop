@@ -1,39 +1,94 @@
 .wrapper {
-    padding: 1rem;
+    width: 80%;
     display: flex;
-    align-items: center;
     justify-content: space-around;
-    background: var(--siteNavBackground);
-    overflow: hidden;
+    align-items: center;
+    color: var(--text);
 }
 
-.links {
+.navMenu {
     display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 5rem;
 }
 
-.link {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+.hamburger {
+    display: none;
 }
 
 .activeLink,
 .inactiveLink {
-    padding: 0 2rem;
+    text-decoration: none;
 }
 
 .activeLink {
-    color: white;
+    color: var(--text);
 }
 
 .inactiveLink {
-    color: #b8b3b3;
+    color: rgb(163, 161, 161);
 }
 
 .inactiveLink:hover {
-    color: purple;
+    color: rgb(196, 195, 195);
+}
+
+.button {
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: var(--button);
+    border: none;
+    box-shadow: 2px 2px var(--buttonShadow);
+}
+
+.button:hover {
+    background-color: var(--buttonHover);
+    cursor: pointer;
+}
+
+.button:active {
+    box-shadow: 0px 0px;
+}
+
+/* Hide hamburger menu on mobile */
+@media (max-width: 800px) {
+    .wrapper {
+        justify-content: space-between;
+    }
+
+    .navMenu {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 10rem;
+        height: 38%;
+        background-color: grey;
+        box-shadow: 2px 2px 20px var(--grey);
+        border-radius: 5%;
+        gap: 0.7rem;
+    }
+
+    .navMenu a {
+        color: var(--black);
+        text-decoration: none;
+        line-height: 2rem;
+    }
+
+    .navMenu a:hover {
+        text-decoration: none;
+        line-height: 2rem;
+    }
+
+    .active {
+        display: flex;
+        left: 1rem;
+        right: 1rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }
