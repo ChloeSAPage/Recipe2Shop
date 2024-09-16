@@ -59,12 +59,12 @@
     }
 
     .navMenu {
-        visibility: hidden;
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: absolute;
+        position: fixed;
         top: 10%;
+        right: 0;
         height: 90%;
         width: 30%;
         background-color: var(--siteNavBackground);
@@ -83,8 +83,10 @@
     .active {
         left: 70%;
         transform: translateX(0); /* Slide back into view */
-        transition: transform 0.3s ease-in-out, visibility 0s;
-        visibility: visible;
+    }
+
+    .navMenu:not(.active) {
+        transform: translateX(100%); /* Slide off-screen to the right */
     }
 
     .hamburger {
