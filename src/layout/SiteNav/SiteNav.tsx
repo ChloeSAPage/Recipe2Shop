@@ -15,7 +15,7 @@ function SiteNav() {
                         key={navLink.url}
                         to={navLink.url}
                         className={({ isActive }) =>
-                            isActive ? styles.activeLink : styles.inactiveLink
+                            `${styles.link} ${isActive ? styles.activeLink : styles.inactiveLink}`
                         }
                     >
                         {navLink.label}
