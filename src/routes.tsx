@@ -1,6 +1,7 @@
 import Root from "./layout/Root/Root";
 import Home from "./views/Home/Home";
 import About from "./views/About/About";
+import Recipes from "./views/Recipes/Recipes";
 
 const routes = [
     {
@@ -14,6 +15,10 @@ const routes = [
             {
                 path: "about",
                 element: <About />,
+            },
+            {
+                path: "recipes",
+                element: <Recipes />,
             },
         ],
     },

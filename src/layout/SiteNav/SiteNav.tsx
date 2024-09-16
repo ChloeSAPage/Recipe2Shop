@@ -1,15 +1,30 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import styles from "./SiteNav.module.css";
+import { useState } from "react";
+import { HiMenu } from "react-icons/hi";
+import { FaTimes } from "react-icons/fa";
 
 function SiteNav() {
     const navLinks = [
         { label: "Home", url: "/" },
         { label: "About", url: "/about" },
+        { label: "Recipes", url: "/recipes" },
     ];
+
+    const [open, setOpen] = useState(false);
+
+    function handleClick() {
+        setOpen(!open);
+    }
+
     return (
         <div className={styles.wrapper}>
-            <h4>Recipe2Shop</h4>
-            <nav className={styles.links}>
+            <h3>Recipe2Shop</h3>
+            <nav
+                className={
+                    open ? `${styles.navMenu} ${styles.active}` : styles.navMenu
+                }
+            >
                 {navLinks.map((navLink) => (
                     <NavLink
                         key={navLink.url}
@@ -21,7 +36,15 @@ function SiteNav() {
                         {navLink.label}
                     </NavLink>
                 ))}
+                <button className={styles.button}>Sign Up</button>
             </nav>
+            <div className={styles.hamburger} onClick={handleClick}>
+                {open ? (
+                    <FaTimes size={40} style={{ color: "black" }} />
+                ) : (
+                    <HiMenu size={40} style={{ color: "black" }} />
+                )}
+            </div>
         </div>
     );
 }

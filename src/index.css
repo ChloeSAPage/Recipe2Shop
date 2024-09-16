@@ -31,9 +31,10 @@ body {
     --siteHeaderBackground: #3f474f;
     --siteFooterBackground: #3f474f;
     --textHighlight: #add8e6;
-    --text: #ffffd4;
+    --text: #ffffff;
     --button: #28a745;
     --buttonShadow: #146c43;
+    --buttonHover: #31cd54;
 
     /* Typography */
     --h1-desktop: 56px/64px "Roboto Condensed", "Roboto", sans-serif;
