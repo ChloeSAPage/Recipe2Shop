@@ -71,7 +71,7 @@
         box-shadow: 3px 3px #4b545e;
         gap: 1.5rem;
         padding-top: 1rem;
-        border: 1px solid red;
+        border: 1px solid rgba(211, 211, 211, 0.178);
         transform: translateX(100%); /* Start off-screen to the right */
         transition: transform 0.3s ease-in-out, visibility 0s 0.3s;
     }
