@@ -35,6 +35,7 @@ body {
     --button: #28a745;
     --buttonShadow: #146c43;
     --buttonHover: #31cd54;
+    --cardBackground: #6c757d;
 
     /* Typography */
     --h1-desktop: 56px/64px "Roboto Condensed", "Roboto", sans-serif;

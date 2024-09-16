@@ -2,3 +2,21 @@
     background: var(--background);
     width: 100%;
 }
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 70%;
+}
+
+.input {
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.container {
+    background-color: var(--cardBackground);
+}
