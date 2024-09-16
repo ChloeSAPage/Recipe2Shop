@@ -2,6 +2,7 @@ import Root from "./layout/Root/Root";
 import Home from "./views/Home/Home";
 import About from "./views/About/About";
 import Recipes from "./views/Recipes/Recipes";
+import SignUp from "./views/SignUp/SignUp";
 
 const routes = [
     {
@@ -19,6 +20,10 @@ const routes = [
             {
                 path: "recipes",
                 element: <Recipes />,
+            },
+            {
+                path: "signup",
+                element: <SignUp />,
             },
         ],
     },

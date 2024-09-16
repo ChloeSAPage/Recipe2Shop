@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import styles from "./SiteNav.module.css";
 import { useState } from "react";
 import { HiMenu } from "react-icons/hi";
@@ -12,9 +12,14 @@ function SiteNav() {
     ];
 
     const [open, setOpen] = useState(false);
+    const navigate = useNavigate()
 
     function handleClick() {
         setOpen(!open);
+    }
+
+    function onClick() {
+        navigate("/signup")
     }
 
     return (
@@ -36,7 +41,7 @@ function SiteNav() {
                         {navLink.label}
                     </NavLink>
                 ))}
-                <button className={styles.button}>Sign Up</button>
+                <button className={styles.button} onClick={() => onClick()}>Sign Up</button>
             </nav>
             <div className={styles.hamburger} onClick={handleClick}>
                 {open ? (
